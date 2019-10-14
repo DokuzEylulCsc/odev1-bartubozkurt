@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--https://www.webcebir.com/6-html-aciklama-satiri-dersi.html-->
+<!--http://htmlmektebi.blogspot.com/2016/02/kullancnn-girdigi-iki-sayy-toplayan.html -->
+<!--https://www.bilisimogretmeni.com/javascript/javascript-ornekleri-dort-islem.html -->
+<html>
+<head>
+	<title> Bartu Bozkurt 2017280013 </title>
+</head>
+	<body>
+	<h1> Bartu Bozkurt 2017280013 </h1>
+		<h2>2019 Güz Döneminin ilk ödevi</h2>
+		<label for="id1">Metin kutusu 1</label>
+			<input type='number' id='id1' />
+			<br>
+		<label for="id2">Metin kutusu 2</label>
+			<input type='number' id='id2' />
+			<br><br>
+		<button onclick="hesapla()"  type="button">Topla</button>
+			<br><br>
+		<label for="id3">Metin kutusu 3</label>
+			<input type='text' id='id3' />
+			<br>
+		<label for="id4">Metin kutusu 4</label>
+			<input type='text' id='id4' />
+			<br><br>
+		<button onclick="yapistir()" type="button">Yapıştır</button>
+	<script>
+      	function hesapla(){	
+		var x =document.getElementById("id1").value;
+		var y= document.getElementById("id2").value;	
+		var sonuc= parseInt(x)+parseInt(y);
+		alert(sonuc);
+		}
+	function yapistir(){
+		var a=document.getElementById("id3").value;
+		var b=document.getElementById("id4").value;
+		var birlestir= a+b;
+		alert(birlestir);
+		}
+	</script>
+	</body>
+</html>
